@@ -1,17 +1,21 @@
-The scripts are being ran against my GNS3 network topology:
+# GNS3 Telent Network Automation Lab
 
-This network topology illustrates a small, managed network designed for network automation tasks.
+This repository contains Python Telnet scripts designed to automate the configuration of network devices within a GNS3 lab environment. The primary goal is to demonstrate how to programmatically connect to devices and deploy standard configurations.
 
-![image](https://github.com/user-attachments/assets/1a84e80e-c4e2-45fb-9bb5-5efcdaa8e517)
+## Network Topology
 
+The scripts are ran against the GNS3 network topology shown below. It features a dedicated management server that configures the internal network devices.
 
-At the center of the topology is Switch1, which serves as the primary access and distribution point. Connected to this switch are three distinct elements:
+![Network Topology Diagram](https://github.com/user-attachments/assets/1a84e80e-c4e2-45fb-9bb5-5efcdaa8e517)
 
-NetworkAutomation-1: This is where the scripts are being ran from. It is a Ubuntu Linux server, connected via its eth0 interface to port e0 of Switch1. This server acts as the management station from which automation scripts are run.
+### Key Components
 
-NAT1 Cloud: Representing a connection to an external network (likely the internet), the NAT cloud is linked to port e1 of Switch1. This provides outside connectivity for the management server.
+*   **NetworkAutomation-1**: This is a Ubuntu Linux server where the Python scripts are executed. It connects via its `eth0` interface to the switch and acts as the central management station.
 
-Core Network Devices: The internal network infrastructure begins with device S1 (likely a multilayer switch or firewall), which is connected to port e2 of Switch1 via its own Gi0/0 port. This device, in turn, connects from its Gi0/1 port to the R1 router's Gi0/0 port.
+*   **Switch1**: A standard Layer 2 switch that serves as the primary access point, linking all network segments together.
 
+*   **NAT1 Cloud**: This represents a connection to an external network (like the internet), allowing the `NetworkAutomation-1` server to download packages or connect to outside resources.
 
-
+*   **Core Network Devices**: The internal infrastructure that is the target of the automation scripts.
+    *   **S1**: A Layer 3 switch or firewall that connects `Switch1` to the rest of the internal network.
+    *   **R1**: A router that serves as the core routing device for this lab.
