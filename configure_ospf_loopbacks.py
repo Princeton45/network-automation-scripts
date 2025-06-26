@@ -5,7 +5,7 @@ import getpass
 import telnetlib
 import time
 
-# Defines the target network host and get user credentials
+# Defines the target network host (which is router 1) and gets user credentials
 HOST = "192.168.122.71"
 user = input("Enter your telnet  username: ")
 password = getpass.getpass()
@@ -39,3 +39,4 @@ tn.write(b"exit\n")
 
 # Print the entire session output to the console
 print(tn.read_all().decode('ascii'))
+
