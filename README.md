@@ -10,7 +10,7 @@ The scripts are ran against the GNS3 network topology shown below. It features a
 
 ### Key Components
 
-*   **NetworkAutomation-1**: This is a Ubuntu Linux server where the Python scripts are executed. It connects via its `eth0` interface to the switch and acts as the central management station.
+*   **NetworkAutomation-1**: This is an Ubuntu Linux server imported from the GNS3 Network Automation appliance, where the Python scripts are executed. It connects via its `eth0` interface to the switch and acts as the central management station.
 
 *   **Switch1**: A standard Layer 2 switch that serves as the primary access point, linking all network segments together.
 
