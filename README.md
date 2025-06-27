@@ -17,5 +17,5 @@ The scripts are ran against the GNS3 network topology shown below. It features a
 *   **NAT1 Cloud**: This allows the `NetworkAutomation-1` server to access the internet and download packages or connect to outside resources.
 
 *   **Core Network Devices**: The internal infrastructure that is the target of the automation scripts.
-    *   **S1**: A Layer 3 switch or firewall that connects `Switch1` to the rest of the internal network.
+    *   **S1**: A Layer 3 switch that connects `Switch1` to the rest of the internal network.
     *   **R1**: A router that serves as the core routing device for this lab.
