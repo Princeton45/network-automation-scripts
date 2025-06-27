@@ -31,10 +31,8 @@ tn.write(b"ip address 2.2.2.2 255.255.255.255\n")
 tn.write(b"router ospf 1\n")
 tn.write(b"network 0.0.0.0 255.255.255.255 area 0\n")
 tn.write(b"end\n")
-
-# Wait for commands to process, then save the configuration and exit
-time.sleep(5)
 tn.write(b"wr mem\n")
+time.sleep(5)
 tn.write(b"exit\n")
 
 # Print the entire session output to the console
