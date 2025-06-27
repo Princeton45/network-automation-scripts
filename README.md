@@ -14,7 +14,7 @@ The scripts are ran against the GNS3 network topology shown below. It features a
 
 *   **Switch1**: A standard Layer 2 switch that serves as the primary access point, linking all network segments together.
 
-*   **NAT1 Cloud**: This represents a connection to an external network (like the internet), allowing the `NetworkAutomation-1` server to download packages or connect to outside resources.
+*   **NAT1 Cloud**: This allows the `NetworkAutomation-1` server to access the internet and download packages or connect to outside resources.
 
 *   **Core Network Devices**: The internal infrastructure that is the target of the automation scripts.
     *   **S1**: A Layer 3 switch or firewall that connects `Switch1` to the rest of the internal network.
