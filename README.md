@@ -1,4 +1,4 @@
-# GNS3 Telnet Network Automation Lab
+# GNS3 Network Automation Lab
 
 This repository contains Python Telnet scripts designed to automate the configuration of network devices within a GNS3 lab environment. The primary goal is to demonstrate how to programmatically connect to devices and deploy standard configurations.
 
