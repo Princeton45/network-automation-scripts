@@ -35,6 +35,6 @@ tn.write(b"wr mem\n")
 time.sleep(5)
 tn.write(b"exit\n")
 
-# Print the entire session output to the console.....
+# Print the entire session output to the console.
 print(tn.read_all().decode('ascii'))
 
