@@ -2,7 +2,7 @@
 Script to retrieve device facts from a Cisco IOS device using NAPALM
 This script connects to a network device and displays basic information
 """
-
+import json
 from napalm import get_network_driver
 
 # Get the appropriate driver for Cisco IOS devices
@@ -18,5 +18,5 @@ iosvl2.open()
 ios_output = iosvl2.get_facts()
 
 # Display the retrieved device information
-print(ios_output)
+print (json.dumps(ios_output, indent=4))
 
